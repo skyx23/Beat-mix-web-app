@@ -1,0 +1,100 @@
+/* "#ffcdb2",
+"#ffb4a2",
+"#e5989b",
+":#b5838d",
+"#6d6875",
+"#cbc0d3",
+"#efd3d7",
+"#feeafa" */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: linear-gradient(240deg,#ff9f1c,#eb5e28);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+header p {
+  font-size: 25px;
+  color: white;
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.pads > div {
+  height: 150px;
+  width: 100px;
+  flex : 1;
+  
+}
+.pad1 {
+  background: #ffcdb2;
+}
+.pad2 {
+  background: #ffb4a2;
+}
+.pad3 {
+  background: #e5989b;
+}
+.pad4 {
+  background: #b5838d;
+}
+.pad5 {
+  background: #6d6875;
+}
+.pad6 {
+  background: #cbc0d3;
+}
+.pad7 {
+  background: #efd3d7;
+}
+.pad8 {
+  background: #feeafa;
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
